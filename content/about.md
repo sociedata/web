@@ -1,5 +1,6 @@
 ---
 title: "Sobre Sociedata"
+date: 2025-06-23
 ---
 
-Sociedata es un proyecto que promueve el uso de datos y visualizaciones accesibles para fortalecer el debate público y la comprensión intercultural.
+Sociedata es un espacio dedicado al análisis de datos sociales, con sentido colectivo e intercultural.

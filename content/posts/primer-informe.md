@@ -1,12 +1,7 @@
 ---
-title: "PAES 2025. Dudas sobre la segregación educativa e inflación de notas"
+title: "Primer informe"
 date: 2025-06-23
-draft: false
-author: Matías Deneken
+tags: ["datos", "sociedad"]
 ---
 
-La educación en Chile ha sido parte del debate público....
-
-![](post1/image1.jpeg)
-
-![](post1/image2.jpeg)
+Este es el primer informe de Sociedata.

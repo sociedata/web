@@ -1,45 +1,46 @@
 baseURL = "https://sociedata.netlify.app/"
 languageCode = "es-cl"
 title = "Sociedata"
-theme = "PaperMod"
+theme = "hello-friend-ng"
 defaultContentLanguage = "es"
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
-
-
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Sociedata"
-  description = "Datos sociales, visualizaciones públicas y análisis con sentido colectivo e intercultural."
-  homeInfoParams = { Title = "Sociedata", Content = "Explora nuestros informes y visualizaciones con propósito social." }
-  defaultTheme = "light"
-  showShareButtons = true
-  
-[params.analytics]
-  disable = true
+  title = "Sociedata"
+  subtitle = "Investigación social, visualización de datos y análisis público"
+  homeSubtitle = "Datos para pensar el mundo"
+  showReadingTime = true
+  enableSharingButtons = false
+  enableThemeToggle = false
+  defaultTheme = "dark"
 
 
-[params.assets]
-  customCSS = ["css/custom.css"]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 [menu]
+
   [[menu.main]]
-    name = "Inicio"
-    url = "/"
+    identifier = "about"
+    name = "Sobre"
+    url = "/about/"
     weight = 1
 
   [[menu.main]]
-    name = "Sobre"
-    url = "/about/"
+    identifier = "posts"
+    name = "Publicaciones"
+    url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "Publicaciones"
-    url = "/posts/"
-    weight = 3
-
-  [[menu.main]]
+    identifier = "apps"
     name = "Apps"
     url = "/apps/"
-    weight = 4
-
+    weight = 3
