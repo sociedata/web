@@ -6,7 +6,14 @@
     <description>Recent content in Publicaciones on Sociedata</description>
     <generator>Hugo</generator>
     <language>es-cl</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primer informe</title>
+      <link>http://localhost:1313/posts/primer-informe/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/primer-informe/</guid>
+      <description>&lt;p&gt;Este es el primer informe publicado por Sociedata. Aquí compartiremos resultados de estudios, análisis y comentarios sobre temas de interés público.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
