@@ -1,12 +1,20 @@
+cat <<EOT > config.toml
 baseURL = "https://sociedata.netlify.app/"
 languageCode = "es-cl"
 title = "Sociedata"
-theme = "ananke"
+theme = "PaperMod"
 defaultContentLanguage = "es"
-enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  description = "Investigación, datos y visualización para el cambio social"
+  author = "Sociedata"
+  description = "Datos sociales, visualizaciones públicas y análisis con sentido colectivo e intercultural."
+  homeInfoParams = { Title = "Sociedata", Content = "Explora nuestros informes y visualizaciones con propósito social." }
+  defaultTheme = "light"
+  showShareButtons = true
+
+[params.assets]
+  customCSS = ["css/custom.css"]
 
 [menu]
   [[menu.main]]
@@ -18,11 +26,14 @@ enableRobotsTXT = true
     name = "Sobre"
     url = "/about/"
     weight = 2
-    
-  [[menu.main]]
-  identifier = "posts"
-  name = "Publicaciones"
-  url = "/posts/"
-  weight = 20
 
-    
+  [[menu.main]]
+    name = "Publicaciones"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Apps"
+    url = "/apps/"
+    weight = 4
+
