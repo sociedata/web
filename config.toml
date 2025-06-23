@@ -1,0 +1,20 @@
+baseURL = "https://sociedata.netlify.app/"
+languageCode = "es-cl"
+title = "Sociedata"
+theme = "ananke"
+defaultContentLanguage = "es"
+enableRobotsTXT = true
+
+[params]
+  description = "Investigación, datos y visualización para el cambio social"
+
+[menu]
+  [[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Sobre"
+    url = "/about/"
+    weight = 2
