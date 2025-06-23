@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Publicaciones on Sociedata</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Publicaciones on Sociedata</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>es-cl</language>
     <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/primer-informe/</link>
       <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/primer-informe/</guid>
-      <description>&lt;p&gt;Este es el primer informe publicado por Sociedata. Aquí compartiremos resultados de estudios, análisis y comentarios sobre temas de interés público.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Este informe presenta un análisis detallado sobre temáticas sociales relevantes para nuestra comunidad.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

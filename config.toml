@@ -1,4 +1,3 @@
-cat <<EOT > config.toml
 baseURL = "https://sociedata.netlify.app/"
 languageCode = "es-cl"
 title = "Sociedata"
