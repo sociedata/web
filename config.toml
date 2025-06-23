@@ -5,12 +5,19 @@ theme = "PaperMod"
 defaultContentLanguage = "es"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+
+
+
 [params]
   author = "Sociedata"
   description = "Datos sociales, visualizaciones públicas y análisis con sentido colectivo e intercultural."
   homeInfoParams = { Title = "Sociedata", Content = "Explora nuestros informes y visualizaciones con propósito social." }
   defaultTheme = "light"
   showShareButtons = true
+  
+[params.analytics]
+  disable = true
+
 
 [params.assets]
   customCSS = ["css/custom.css"]
