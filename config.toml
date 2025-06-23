@@ -18,3 +18,11 @@ enableRobotsTXT = true
     name = "Sobre"
     url = "/about/"
     weight = 2
+    
+  [[menu.main]]
+  identifier = "posts"
+  name = "Publicaciones"
+  url = "/posts/"
+  weight = 20
+
+    
