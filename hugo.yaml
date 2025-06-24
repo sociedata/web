@@ -1,0 +1,131 @@
+baseURL: https://sociedata.netlify.app
+title: Sociedata
+
+# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
+
+# Language settings
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableMissingTranslationPlaceholders: true
+
+enableRobotsTXT: true
+enableGitInfo: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+pygmentsUseClassic: false
+pygmentsStyle: tango
+
+permalinks:
+  blog: /:section/:year/:month/:day/:slug/
+
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+
+languages:
+  en:
+    languageName: English
+    title: Sociedata
+    params:
+      description: A site for exploring data and social transformation
+  'no':
+    languageName: Norsk
+    contentDir: content/no
+    title: Sociedata (Norsk)
+    params:
+      description: Docsy er operativsystem for skyen
+      time_format_default: 02.01.2006
+      time_format_blog: 02.01.2006
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+
+outputs:
+  section: [HTML, print, RSS]
+
+params:
+  taxonomy:
+    taxonomyCloud: [tags, categories]
+    taxonomyCloudTitle: [Tag Cloud, Categories]
+    taxonomyPageHeader: [tags, categories]
+
+  privacy_policy: https://policies.google.com/privacy
+
+  version_menu: Releases
+  archived_version: false
+  version: 0.0
+  url_latest_version: https://example.com
+
+  github_repo: https://github.com/sociedata/web
+  github_project_repo: https://github.com/sociedata/web
+  github_branch: main
+
+  gcs_engine_id: d72aa9b2712488cc3
+  offlineSearch: false
+  prism_syntax_highlighting: false
+
+  copyright:
+    authors: Sociedata | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    from_year: 2025
+
+  ui:
+    breadcrumb_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_menu_compact: false
+    sidebar_search_disable: false
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a href="https://github.com/sociedata/web/issues/new">tell us how we can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a href="https://github.com/sociedata/web/issues/new">tell us how we can improve</a>.
+    readingtime:
+      enable: false
+
+  links:
+    user:
+      - name: Boletín Sociedata
+        url: https://sociedata.netlify.app/newsletter
+        icon: fa fa-envelope
+        desc: Recibe novedades sobre datos e investigación social
+      - name: Twitter
+        url: https://twitter.com/sociedata
+        icon: fab fa-twitter
+        desc: Síguenos en Twitter para noticias y debates
+    developer:
+      - name: GitHub
+        url: https://github.com/sociedata/web
+        icon: fab fa-github
+        desc: Código fuente y desarrollo del sitio
+      - name: Slack
+        url: https://sociedata.netlify.app/slack
+        icon: fab fa-slack
+        desc: Comunidad y discusiones técnicas
+      - name: Developer mailing list
+        url: https://sociedata.netlify.app/mail
+        icon: fa fa-envelope
+        desc: Conversaciones sobre desarrollo y colaboración
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.146.0
+  imports:
+    - path: github.com/google/docsy
+      disable: false
+

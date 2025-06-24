@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container pt-5 my-5">
+
+  <h1 class="mb-4" style="padding-top: 2rem;">Informes</h1>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+    {{ range (.Paginator 4).Pages }}
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ .Date.Format "2006-01-02" }}</h6>
+          <p class="card-text">{{ .Params.description }}</p>
+          <a href="{{ .RelPermalink }}" class="card-link">Ver más</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="mt-4">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+
+</div>
+{{ end }}
