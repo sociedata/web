@@ -55,7 +55,8 @@ markup:
     style: tango
 
 outputs:
-  section: [HTML, print, RSS]
+  section: [HTML, RSS]
+
 
 params:
   taxonomy:
